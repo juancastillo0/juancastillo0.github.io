@@ -37,3 +37,8 @@ i[class*="material-icons"] {
   font-size: 60%;
   font-weight: lighter;
 }
+@media (max-width: 768px){
+  #main-col {
+    padding: 45px 0 30px;
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "index": {
+    "#description": "20-year-old Colombian born in Neiva, Huila. I am a Mechanical Engineer and Systems and Computer Engineer from the University of Los Andes. I'm passionate about science and engineering, and I'm worried about climate change. In particular, I am interested in applications in the area of energy conversion. <br> <br> Other interests are software development and architecture, scientific programming and numerical analysis, and artificial intelligence. In general, I am interested in the intersection between computing and science and engineering.",
+    "#continue-button-anchor": "Continue"
+  },
+  "main": {
+    "#navigation": {
+      "[href='#contact']": "Contact Me",
+      "[href='#interests']": "Interests",
+      "[href='#technologies']": "Technologies",
+      "[href='#projects']": "Projects",
+      "[href='#trajectory']": "Career"
+    },
+    ".section-title": {
+      "#contact": "Contact Me",
+      "#interests": "Interests",
+      "#technologies": "Technologies",
+      "#projects": "Projects",
+      "#trajectory": "Career"
+    },
+    ".section-content": {
+      "#interests": [
+        "Climate Change",
+        "Machine Learning & Deep Learning",
+        ["Computer Vision", "Graphs", "Statistical Inference"],
+        "Software Arquitecture & Development",
+        "Energy Conversion",
+        "Scientific Programming & Numerical Analysis"
+      ],
+      "#technologies": [
+        "Python",
+        ["NumPy, Pandas & Matplotlib", "Django & REST framework"],
+        "HTML, CSS & JavaScript",
+        ["React", "TypeScript"],
+        "Mobile",
+        ["Dart & Flutter"],
+        "Other",
+        ["Redux", "Java", "SQL"],
+        "Machine Learning & Deep Learning",
+        [
+          "TensorFlow & Keras",
+          "TensorFlow Probability",
+          "Graph-Nets",
+          "Scikit-Learn"
+        ]
+      ],
+      "#projects": {
+        "$project": [
+          {
+            "title": "NotePy",
+            "date": "201910",
+            "content": "Platform that allows you to specify and solve mathematical equations by writing them on a touch device. The platform implements a neural network that recognizes handwritten symbols and then models the mathematical language. <br> The system uses only visual information, which results in a technological development that can be applied in other related problems, such as the digitization of manuscript forms or printed documents."
+          }
+        ]
+      },
+      "#trajectory": [
+        "(2004-2014) Aspaen Gimnasio La Fragua",
+        [
+          "Best regional score on test ICFES Saber 11, Huila",
+          "Andres Bello Award - Mathematics",
+          "Andres Bello Award - Sciences"
+        ],
+        "(201610) Uniandes - Computer Science",
+        "(201620) Uniandes - Mechanical Engineering"
+      ]
+    }
+  },
+  "configuration": {
+    "#configuration": {
+      "[for='font-size-range']": "Font Size",
+      "[for='dark-mode-switch']": "Dark Mode",
+      "[for='language-select']": "Idioma"
+    }
+  }
+}

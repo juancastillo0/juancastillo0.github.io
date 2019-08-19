@@ -34,7 +34,7 @@
             <a class="nav-link" href="#interests">Intereses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tecnologies">Tecnologías</a>
+            <a class="nav-link" href="#technologies">Tecnologías</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Proyectos</a>
@@ -61,7 +61,15 @@
               <button class=""><i class="material-icons-outlined">add_circle_outline</i></button>
             </div>
           </div>
+          <div id="language-select-container">
+            <label for="language-select">Lenguaje</label>
+            <select class="custom-select" id="language-select">
+              <option value="EN" selected>English</option>
+              <option value="ES">Español</option>
+            </select>
+          </div>
         </div>
+
         <!-- Button to close the navigation and configuration options -->
         <button class="btn btn-secundary btn-block" id="navigation-close">
           <i class="material-icons-outlined">expand_less</i>
@@ -80,7 +88,7 @@
           <section id="contact">
             <h2 class="section-title">Contacto</h2>
             <ul class="section-content">
-              <li>Correo:
+              <li>Email:
                 <a id="contact-email" href="mailto: jm.castillo12@uniandes.edu.co" target="_black">
                   jm.castillo12 @uniandes.edu.co
                 </a>
@@ -114,7 +122,7 @@
           </section>
 
 
-          <section id="tecnologies">
+          <section id="technologies">
             <h2 class="section-title">Tecnologías</h2>
             <ul class="section-content">
               <li>Python</li>
@@ -154,8 +162,8 @@
               <article class="project">
                 <h3 class="project-title">
                   NotePy
-                  <span class="project-date">(201910)</span>
                 </h3>
+                <span class="project-date">(201910)</span>
                 <p class="project-content">
                   Plataforma que permite especificar y solucionar ecuaciones matemáticas
                   escribiendo en un dispositivo táctil. La plataforma implementa una red
@@ -176,9 +184,9 @@
             <ul class="section-content">
               <li>(2004-2014) Aspaen Gimnasio La Fragua</li>
               <ul>
-                <li>Mejor puntaje pruebas Saber 11, Huila</li>
-                <li>Andres Bello - Matemáticas</li>
-                <li>Andres Bello - Ciencias</li>
+                <li>Mejor puntaje pruebas ICFES Saber 11, Huila</li>
+                <li>Distinción Andres Bello - Matemáticas</li>
+                <li>Distinción Andres Bello - Ciencias</li>
               </ul>
               <li>(201610) Uniandes - Ingeniería de Sistemas y Computación</li>
               <li>(201620) Uniandes - Ingeniería Mecánica</li>
@@ -192,6 +200,7 @@
   </div>
 
   <!-- Scripts -->
+  <script type="module" src="./scripts/utils-inter.js"></script>
   <script type="module" src="./scripts/utils-sidebar.js"></script>
   <script type="module" src="./scripts/utils-themes.js"></script>
   <script type="module" src="./scripts/main.js"></script>

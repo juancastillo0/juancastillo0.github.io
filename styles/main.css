@@ -53,10 +53,10 @@ section .section-content li {
 
 .project-title {
   margin-bottom: 15px;
+  display: inline-block;
 }
 .project-date {
-  padding-left: 5px;
-  font-size: 70%;
+  padding-left: 6px;
 }
 .project-content {
   margin-left: 0.5em;

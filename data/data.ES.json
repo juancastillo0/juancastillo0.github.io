@@ -1,0 +1,75 @@
+{
+  "index": {
+    "#description": "Colombiano de 20 años nacido en Neiva, Huila. Soy Ingeniero Mecánico e Ingeniero de Sistemas y Computación de la Universidad de Los Andes.  Me apasiona la ciencia e ingeniería, y me preocupa el cambio climático. En particular, me interesan aplicaciones en el área  de conversión de energía. <br> <br>  Otros intereser son el desarrollo y arquitectura de software, programación científica y análisis numérico, e inteligencia artificial. En general, estoy interesado en la intersección entre la computación y la ciencia e ingeniería. ",
+    "#continue-button-anchor": "Continuar"
+  },
+  "main": {
+    "#navigation": {
+      "[href='#contact']": "Contacto",
+      "[href='#interests']": "Intereses",
+      "[href='#technologies']": "Tecnologías",
+      "[href='#projects']": "Proyectos",
+      "[href='#trajectory']": "Trajectoria"
+    },
+    ".section-title": {
+      "#contact": "Contacto",
+      "#interests": "Intereses",
+      "#technologies": "Tecnologías",
+      "#projects": "Proyectos",
+      "#trajectory": "Trajectoria"
+    },
+    ".section-content": {
+      "#interests": [
+        "Cambio Climático",
+        "Machine Learning & Deep Learning",
+        ["Visión Artificial", "Grafos", "Inferencia Estadística"],
+        "Desarrollo & Arquitectura de Software",
+        "Conversión de Energía",
+        "Programación Científica & Análisis Numérico"
+      ],
+      "#technologies": [
+        "Python",
+        ["NumPy, Pandas & Matplotlib", "Django & REST framework"],
+        "HTML, CSS & JavaScript",
+        ["React", "TypeScript"],
+        "Movil",
+        ["Dart & Flutter"],
+        "Otros",
+        ["Redux", "Java", "SQL"],
+        "Machine Learning & Deep Learning",
+        [
+          "TensorFlow & Keras",
+          "TensorFlow Probability",
+          "Graph-Nets",
+          "Scikit-Learn"
+        ]
+      ],
+      "#projects": {
+        "$project": [
+          {
+            "title": "NotePy",
+            "date": "201910",
+            "content": "Plataforma que permite especificar y solucionar ecuaciones matemáticas escribiendo en un dispositivo táctil. La plataforma implementa una red neuronal que reconocen los símbolos manuscritos para luego modelar el lenguaje matemático. <br> El sistema utiliza, únicamente, información visual, lo cual resulta en un desarrollo tecnológico que puede ser aplicado en problemas relacionados, como la digitalización de formularios manuscritos o documentos impresos."
+          }
+        ]
+      },
+      "#trajectory": [
+        "(2004-2014) Aspaen Gimnasio La Fragua",
+        [
+          "Mejor puntaje pruebas ICFES Saber 11, Huila",
+          "Distinción Andrés Bello - Matemáticas",
+          "Distinción Andrés Bello - Ciencias"
+        ],
+        "(201610) Uniandes - Ingeniería de Sistemas y Computación",
+        "(201620) Uniandes - Ingeniería Mecánica"
+      ]
+    }
+  },
+  "configuration": {
+    "#configuration": {
+      "[for='font-size-range']": "Tamaño de Letra",
+      "[for='dark-mode-switch']": "Modo Oscuro",
+      "[for='language-select']": "Language"
+    }
+  }
+}

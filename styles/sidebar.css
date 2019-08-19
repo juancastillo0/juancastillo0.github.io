@@ -52,10 +52,9 @@ button[id*="navigation-"] i[class*="material-icons"] {
   }
 }
 
-
 /* Configuration */
 #configuration > div {
-  margin: 30px auto 5px;
+  margin: 20px auto 5px;
 }
 
 /* Dark mode switch */
@@ -71,7 +70,7 @@ button[id*="navigation-"] i[class*="material-icons"] {
   max-width: 375px;
 }
 .range-container label {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .range-input-container {
   padding: 0 12%;
@@ -90,10 +89,17 @@ button[id*="navigation-"] i[class*="material-icons"] {
 .range-input-container button i[class*="material-icons"] {
   font-size: 26px;
 }
-.range-input-container button:hover{
+.range-input-container button:hover {
   font-weight: bolder;
 }
 
 .range-container .custom-range {
   padding: 0 8px;
+}
+
+/* Language select */
+div#language-select-container {
+  max-width: 250px;
+  margin: 5px auto;
+  padding: 0 25px;
 }

@@ -41,6 +41,14 @@
               <button class=""><i class="material-icons-outlined">add_circle_outline</i></button>
             </div>
           </div>
+          <!-- Select for text language -->
+          <div id="language-select-container">
+              <label for="language-select">Lenguaje</label>
+              <select class="custom-select" id="language-select">
+                <option value="EN" selected>English</option>
+                <option value="ES">Español</option>
+              </select>
+            </div>
         </div>
         <!-- Button to close the configuration options -->
         <button class="btn btn-secundary btn-block" id="navigation-close">
@@ -75,7 +83,7 @@
         <!-- Button to the main page -->
         <div id="continue-button-container">
           <button class="btn" id="continue-button">
-            <a href="./main">Continuar</a>
+            <a href="./main" id="continue-button-anchor">Continuar</a>
           </button>
         </div>
       </div>
@@ -83,6 +91,7 @@
   </div>
 
   <!-- Scripts -->
+  <script type="module" src="./scripts/utils-inter.js"></script>
   <script type="module" src="./scripts/utils-sidebar.js"></script>
   <script type="module" src="./scripts/utils-themes.js"></script>
 </body>
