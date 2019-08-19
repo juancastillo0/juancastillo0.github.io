@@ -19,7 +19,7 @@ Juan Manuel Castillo's homepage: Contact information, general interests, technol
  
  
  ### Links
- You can view the released project in <a src="https://juancastillo0.github.io/">Juan Manuel Castillo's Homepage</a>
+ You can view the released project in [Juan Manuel Castillo's Homepage](https://juancastillo0.github.io)
  
  
  ### Screenshot of the main page 
@@ -29,4 +29,4 @@ Juan Manuel Castillo's homepage: Contact information, general interests, technol
  
  
  ### Licence
- This project is licensed under the [MIT License](../blob/master/LICENSE)
+ This project is licensed under the [MIT License](./LICENSE)
