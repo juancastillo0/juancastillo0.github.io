@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Juan Castillo</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Red+Hat+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="main-row">
+
+      <!-- Button to open the configuration options -->
+      <button class="btn btn-secundary" id="navigation-collapse" aria-controls="navigation" aria-expanded="false"
+        aria-label="Mostrar navegación">
+        <i class="material-icons-outlined">menu</i>
+      </button>
+      <!-- Fixed sidebar -->
+      <div class="col-xl-3 col-md-3 col-12" id="navigation">
+        <!-- Navigation -->
+        <ul class="nav flex-column nav-pills ">
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests">Intereses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tecnologies">Tecnologías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trajectory">Trajectoria</a>
+          </li>
+        </ul>
+        <hr>
+        <!-- Configuration options -->
+        <div id="configuration">
+          <!-- Switch/checkbox to set dark mode -->
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="dark-mode-switch">
+            <label class="custom-control-label" for="dark-mode-switch">Modo Oscuro</label>
+          </div>
+          <!-- Slider and buttons to set the document font size -->
+          <div class="range-container" id="font-size-range-container">
+            <label for="font-size-range">Tamaño de Letra</label>
+            <div class="range-input-container">
+              <button class=""><i class="material-icons-outlined">remove_circle_outline</i>
+              </button>
+              <input type="range" class="custom-range" min="14" max="24" step="1" id="font-size-range">
+              <button class=""><i class="material-icons-outlined">add_circle_outline</i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Button to close the navigation and configuration options -->
+        <button class="btn btn-secundary btn-block" id="navigation-close">
+          <i class="material-icons-outlined">expand_less</i>
+        </button>
+      </div>
+
+      <div class="col-xl-7 offset-xl-3  col-lg-8 offset-md-3 col-md-9 offset-md-3 col-xs-12" id="main-col">
+        <!-- Main title -->
+        <div id="main-title">
+          <h1>Juan Manuel Castillo <br>
+            <span id="homepage-span">Homepage</span>
+          </h1>
+        </div>
+        <!-- Main content with all the sections, ids explain the content of each section-->
+        <div id="main-content">
+          <section id="contact">
+            <h2 class="section-title">Contacto</h2>
+            <ul class="section-content">
+              <li>Correo:
+                <a id="contact-email" href="mailto: jm.castillo12@uniandes.edu.co" target="_black">
+                  jm.castillo12 @uniandes.edu.co
+                </a>
+                <button class="btn" id="email-copy-button">
+                  <i class="material-icons-outlined">file_copy</i>
+                </button>
+              </li>
+              <li>Twitter: <a href="https://twitter.com/JuanMan52016184" target="_black">JuanMan52016184</a>
+              </li>
+              <li>Github: <a href="https://github.com/juancastillo0" target="_black">juancastillo0</a>
+              </li>
+              <li>Kaggle: <a href="https://www.kaggle.com/juancastillo0" target="_black">juancastillo0</a>
+              </li>
+            </ul>
+          </section>
+
+          <section id="interests">
+            <h2 class="section-title">Intereses</h2>
+            <ul class="section-content">
+              <li>Cambio Climático</li>
+              <li>Machine Learning & Deep Learning</li>
+              <ul>
+                <li>Visión Artificial</li>
+                <li>Grafos</li>
+                <li>Inferencia Estadística</li>
+              </ul>
+              <li>Desarrollo & Arquitectura de Software</li>
+              <li>Conversión de Energía</li>
+              <li>Programación Científica & Análisis Numérico</li>
+            </ul>
+          </section>
+
+
+          <section id="tecnologies">
+            <h2 class="section-title">Tecnologías</h2>
+            <ul class="section-content">
+              <li>Python</li>
+              <ul>
+                <li>NumPy, Pandas & Matplotlib</li>
+                <li>Django & REST framework</li>
+              </ul>
+              <li>HTML, CSS & JavaScript</li>
+              <ul>
+                <li>React</li>
+                <li>TypeScript</li>
+
+              </ul>
+              <li>Movil</li>
+              <ul>
+                <li>Dart & Flutter</li>
+              </ul>
+              <li>Otros</li>
+              <ul>
+                <li>Redux</li>
+                <li>Java</li>
+                <li>SQL</li>
+              </ul>
+              <li>Machine Learning & Deep Learning</li>
+              <ul>
+                <li>TensorFlow & Keras</li>
+                <li>TensorFlow Probability</li>
+                <li>Graph-Nets</li>
+                <li>Scikit-Learn</li>
+              </ul>
+            </ul>
+          </section>
+
+          <section id="projects">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="section-content">
+              <article class="project">
+                <h3 class="project-title">
+                  NotePy
+                  <span class="project-date">(201910)</span>
+                </h3>
+                <p class="project-content">
+                  Plataforma que permite especificar y solucionar ecuaciones matemáticas
+                  escribiendo en un dispositivo táctil. La plataforma implementa una red
+                  neuronal que reconocen los símbolos manuscritos para luego modelar el lenguaje
+                  matemático.
+                  <br>
+                  El sistema utiliza, únicamente, información visual,
+                  lo cual resulta en un desarrollo tecnológico que puede ser
+                  aplicado en problemas relacionados, como la digitalización de
+                  formularios manuscritos o documentos impresos.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section id="trajectory">
+            <h2 class="section-title">Trajectoria</h2>
+            <ul class="section-content">
+              <li>(2004-2014) Aspaen Gimnasio La Fragua</li>
+              <ul>
+                <li>Mejor puntaje pruebas Saber 11, Huila</li>
+                <li>Andres Bello - Matemáticas</li>
+                <li>Andres Bello - Ciencias</li>
+              </ul>
+              <li>(201610) Uniandes - Ingeniería de Sistemas y Computación</li>
+              <li>(201620) Uniandes - Ingeniería Mecánica</li>
+
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="./scripts/utils-sidebar.js"></script>
+  <script type="module" src="./scripts/utils-themes.js"></script>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
+
+</html>

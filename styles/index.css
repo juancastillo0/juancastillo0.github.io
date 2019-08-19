@@ -1,0 +1,18 @@
+@import "global.css";
+
+#description{
+  padding: 50px;
+}
+@media (max-width: 576px){
+  #description{
+    padding: 30px;
+  }
+}
+#continue-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+#continue-button {
+  margin: 0 35px;
+  font-size: 120%;
+}

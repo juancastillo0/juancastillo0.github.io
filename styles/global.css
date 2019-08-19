@@ -1,0 +1,39 @@
+@import "bootstrap.min.css";
+@import "sidebar.css";
+
+/* General */
+a {
+  color: var(--anchor-color);
+}
+a:hover {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+
+  font-size: var(--font-size);
+  color: var(--font-color);
+  background-color: var(--main-bg-color);
+}
+i[class*="material-icons"] {
+  top: 0.12em;
+  font-size: var(--font-size);
+  position: relative;
+  color: var(--font-color);
+  font-weight: inherit;
+}
+
+/* Main */
+#main-col {
+  background-color: var(--primary-color);
+  padding: 35px 0 30px;
+}
+#main-title {
+  text-align: center;
+}
+#main-title #homepage-span {
+  font-size: 60%;
+  font-weight: lighter;
+}

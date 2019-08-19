@@ -1,0 +1,71 @@
+@import "./global.css";
+
+/* Main Sections */
+#main-content section .section-title {
+  margin-bottom: 27px;
+}
+#main-content section {
+  margin: 0 25px;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 45px 20px 60px;
+}
+#main-content section:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  #main-content section {
+    margin: 0 15px;
+    padding: 40px 0;
+  }
+}
+
+/* Sections lists */
+section ul.section-content,
+section .section-content ul {
+  list-style: none;
+  padding: 0 0 0 1.5em;
+  margin: 0 0 0 0.5em;
+  border-left: 2px solid var(--secondary-color);
+}
+section .section-content li {
+  margin: 4px 0;
+}
+
+/* Individual Sections */
+
+/* Contact */
+#contact .section-content li {
+  margin-bottom: 6px;
+}
+#email-copy-button {
+  padding: 0 3px;
+  margin: 0 6px;
+}
+#email-copy-button:hover {
+  font-weight: bolder;
+}
+
+/* Projects */
+.project {
+  padding: 10px;
+}
+
+.project-title {
+  margin-bottom: 15px;
+}
+.project-date {
+  padding-left: 5px;
+  font-size: 70%;
+}
+.project-content {
+  margin-left: 0.5em;
+  border-left: 2px solid var(--secondary-color);
+  padding-left: 25px;
+}
+
+@media (max-width: 576px) {
+  .project {
+    padding: 20px 10px;
+  }
+}

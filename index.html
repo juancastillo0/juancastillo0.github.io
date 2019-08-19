@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Juan Castillo</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Red+Hat+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="main-row">
+      <!-- Button to open the configuration options -->
+      <button class="btn btn-secundary" id="navigation-collapse" aria-controls="navigation" aria-expanded="false"
+        aria-label="Mostrar navegación">
+        <i class="material-icons-outlined">menu</i>
+      </button>
+      <!-- Fixed sidebar -->
+      <div class="col-xl-3 col-md-3 col-12" id="navigation">
+        <!-- Configuration options -->
+        <div id="configuration">
+          <!-- Switch/checkbox to set dark mode -->
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="dark-mode-switch">
+            <label class="custom-control-label" for="dark-mode-switch">Modo Oscuro</label>
+          </div>
+          <!-- Slider and buttons to set the document font size -->
+          <div class="range-container" id="font-size-range-container">
+            <label for="font-size-range">Tamaño de Letra</label>
+            <div class="range-input-container">
+              <button class=""><i class="material-icons-outlined">remove_circle_outline</i>
+              </button>
+              <input type="range" class="custom-range" min="14" max="24" step="1" id="font-size-range">
+              <button class=""><i class="material-icons-outlined">add_circle_outline</i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Button to close the configuration options -->
+        <button class="btn btn-secundary btn-block" id="navigation-close">
+          <i class="material-icons-outlined">expand_less</i>
+        </button>
+      </div>
+
+      <div class="col-xl-7 offset-xl-3  col-lg-8 offset-md-3 col-md-9 offset-md-3 col-xs-12" id="main-col">
+        <!-- Main title -->
+        <div id="main-title">
+          <h1>Juan Manuel Castillo <br>
+            <span id="homepage-span">Homepage</span>
+          </h1>
+        </div>
+
+        <!-- Main content, brief description -->
+        <div id="main-content">
+          <p id="description">
+            Colombiano de 20 años nacido en Neiva, Huila. Soy Ingeniero Mecánico e Ingeniero de Sistemas
+            y Computación de la Universidad de Los Andes, en el segundo semestre de 2019 cursé mi octavo
+            semestre.
+            Me apasiona la ciencia e ingeniería, y me preocupa el cambio climático, por esto
+            estudié Ingeniería Mecánica. En particular, me interesan aplicaciones en el área
+            de la conversión de energía.
+            <br> <br>
+            Otros intereser son el desarrollo y arquitectura de software, programación científica y análisis
+            numérico, e inteligencia artificial. En general, estoy interesado en la
+            intersección entre la computación y la ciencia e ingeniería.
+          </p>
+        </div>
+
+        <!-- Button to the main page -->
+        <div id="continue-button-container">
+          <button class="btn" id="continue-button">
+            <a href="./main">Continuar</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="./scripts/utils-sidebar.js"></script>
+  <script type="module" src="./scripts/utils-themes.js"></script>
+</body>
+
+</html>

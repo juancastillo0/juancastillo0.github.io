@@ -1,0 +1,23 @@
+{
+  "name": "juancastillo-homepage",
+  "version": "1.0.0",
+  "description": "Juan Manuel Castillo's homepage: Contact information, general interests, technologies, projects and trajectory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juancastillo0/juancastillo0.github.io.git"
+  },
+  "keywords": [],
+  "author": "Juan Manuel Castillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juancastillo0/juancastillo0.github.io/issues"
+  },
+  "homepage": "https://github.com/juancastillo0/juancastillo0.github.io#readme",
+  "devDependencies": {
+    "eslint": "^6.2.0"
+  }
+}

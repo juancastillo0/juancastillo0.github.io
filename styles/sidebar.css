@@ -1,0 +1,99 @@
+/* Navigation */
+#navigation {
+  z-index: 1;
+  position: fixed;
+  top: -1000px;
+  text-align: center;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: var(--main-bg-color);
+  transition: 0.2s;
+}
+.nav-pills {
+  font-size: 110%;
+}
+.nav-pills .nav-link {
+  padding: 12px;
+  border-radius: 0;
+  background-color: var(--main-bg-color);
+}
+.nav-pills .nav-link.active {
+  color: inherit;
+  background-color: var(--primary-color);
+}
+@media (min-width: 760px) {
+  #navigation {
+    transition: 0s;
+  }
+}
+
+/* Navigation collapse button */
+button[id*="navigation-"] i[class*="material-icons"] {
+  font-size: 28px;
+}
+#navigation-collapse {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  right: 0px;
+  background: var(--primary-color);
+}
+@media (min-width: 768px) {
+  #navigation {
+    padding-top: 35px;
+    top: 0px;
+    transition: 0s;
+  }
+  #navigation-close {
+    display: none;
+  }
+  #navigation-collapse {
+    display: none;
+  }
+}
+
+
+/* Configuration */
+#configuration > div {
+  margin: 30px auto 5px;
+}
+
+/* Dark mode switch */
+.custom-control.custom-switch .custom-control-label::before {
+  top: calc(0.46em - 2px);
+}
+.custom-control.custom-switch .custom-control-label::after {
+  top: 0.46em;
+}
+
+/* Font size range */
+.range-container {
+  max-width: 375px;
+}
+.range-container label {
+  margin-bottom: 5px;
+}
+.range-input-container {
+  padding: 0 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.range-input-container button {
+  color: inherit;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 120%;
+  background-color: var(--main-bg-color);
+  border: 0;
+}
+.range-input-container button i[class*="material-icons"] {
+  font-size: 26px;
+}
+.range-input-container button:hover{
+  font-weight: bolder;
+}
+
+.range-container .custom-range {
+  padding: 0 8px;
+}
