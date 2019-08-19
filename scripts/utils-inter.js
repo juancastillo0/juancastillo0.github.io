@@ -45,44 +45,47 @@ function addData(dict, pre = [], suf = []) {
     const selector = key[0];
 
     switch (selector) {
-      case "#":
-      case "[":
-        const query = `${pre.join(" ")} ${key} ${suf.join(" ")}`;
-        const elem = document.querySelector(query);
-        if (elem === null) {
-          throw new Error(query);
-        }
-        addHtml(elem, value, key, pre, suf);
-        break;
-      case ".":
-        addData(value, pre, [...suf, key]);
-        break;
-      case "$":
-        addGenerated(key.slice(1), value, pre, suf);
-        break;
-      default:
-        throw new Error(selector);
+    case "#":
+    case "[": {
+      const query = `${pre.join(" ")} ${key} ${suf.join(" ")}`;
+      const elem = document.querySelector(query);
+      if (elem === null) {
+        throw new Error(query);
+      }
+      addHtml(elem, value, key, pre, suf);
+      break;
+    }
+    case ".":
+      addData(value, pre, [...suf, key]);
+      break;
+    case "$":
+      addGenerated(key.slice(1), value, pre, suf);
+      break;
+    default:
+      throw new Error(selector);
     }
   }
 }
 
 /** Load data to refresh document with language */
-async function loadData(lang) {
-  const dataRaw = await fetch(`../data/data.${lang}.json`);
-  const data = await dataRaw.json();
-  addData(data.configuration);
+function loadData(lang) {
+  fetch(`../data/data.${lang}.json`)
+    .then(dataRaw => dataRaw.json())
+    .then(data => {
+      addData(data.configuration);
 
-  switch (document.location.pathname) {
-    case "/":
-      addData(data.index);
-      break;
-    case "/main":
-      addData(data.main);
-      break;
-    default:
-      throw new Error();
-  }
-  window.sessionStorage.setItem("lang", lang);
+      switch (document.location.pathname) {
+      case "/":
+        addData(data.index);
+        break;
+      case "/main":
+        addData(data.main);
+        break;
+      default:
+        throw new Error();
+      }
+      window.sessionStorage.setItem("lang", lang);
+    });
 }
 
 /** Initialize languaje-select and set event listener */
